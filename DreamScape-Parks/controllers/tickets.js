@@ -18,8 +18,13 @@ const CreateTickets = async (req, res) => {
   }
 }
 
-const DeleteTickets = (req, res) => {
-  console.log(req)
+const DeleteTickets = async (req, res) => {
+  try {
+    await Ticket.deleteOne({ _id: req.params.ticket_id })
+    res.send({ msg: 'Ticket Deleted' })
+  } catch (error) {
+    console.log(error)
+  }
 }
 
 module.exports = {
