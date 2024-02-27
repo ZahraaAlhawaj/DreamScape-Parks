@@ -32,7 +32,7 @@ app.use('/', indexRouter)
 app.use('/users', usersRouter)
 
 app.use('/rides', RideRouter)
-app.use('/foods', FoodRouter)
+app.use('/food', FoodRouter)
 app.use('/tickets', TicketRouter)
 
 // catch 404 and forward to error handler
