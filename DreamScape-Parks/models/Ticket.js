@@ -5,7 +5,7 @@ const ticketSchema = new Schema(
     personName: { type: String },
     email: { type: String },
     totalCost: { type: Number },
-    food: [{ type: Schema.Types.ObjectId, ref: 'Food' }],
+    food: [{ name: String, qty: Number }],
     ride: [{ type: Schema.Types.ObjectId, ref: 'Ride' }]
   },
   {
