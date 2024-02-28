@@ -12,6 +12,7 @@ var usersRouter = require('./routes/users')
 const RideRouter = require('./routes/RideRouter')
 const FoodRouter = require('./routes/FoodRouter')
 const TicketRouter = require('./routes/TicketRouter')
+const nodemailer = require('nodemailer')
 
 var app = express()
 
